@@ -9,10 +9,11 @@
       integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="./about.css" />
     <title>About</title>
   </head>
   <body>
-    <nav class="container">
+    <nav class="container-fluid">
       <header
         class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom"
       >
@@ -23,26 +24,58 @@
           <svg class="bi me-2" width="40" height="32" aria-hidden="true">
             <use xlink:href="#bootstrap"></use>
           </svg>
-          <span class="fs-4">Simple header</span>
+          <span class="fs-4">Deborah Okolo</span>
         </a>
         <ul class="nav nav-pills">
           <li class="nav-item">
-            <a href="./index.html" class="nav-link active" aria-current="page"
-              >Home</a
-            >
+            <a href="./index.html" class="nav-link">Home</a>
           </li>
           <li class="nav-item">
-            <a href="./about.html" class="nav-link">About</a>
+            <a href="./about.html" class="nav-link active" aria-current="page"
+              >About</a
+            >
           </li>
           <li class="nav-item">
             <a href="./contact.html" class="nav-link">Contact</a>
           </li>
-          <li class="nav-item"><a href="#" class="nav-link">More Info</a></li>
+          <li class="nav-item">
+            <a href="./info.html" class="nav-link">More Info</a>
+          </li>
         </ul>
       </header>
     </nav>
-    <h1>About Page</h1>
-    <p>This is the about page.</p>
+    <main>
+      <div class="px-4 py-5 my-5 text-center">
+        <img
+          class="d-block mx-auto mb-4"
+          src="./images/passport image.jpg"
+          alt="passport image of deborah"
+          width="100"
+          height="100"
+        />
+        <h1 class="display-5 fw-bold text-body-emphasis">Why Deborah?</h1>
+        <div class="col-lg-6 mx-auto">
+          <p class="lead mb-4">
+            I am an enthusiastic and detail-oriented beginner in Frontend
+            Development with a strong foundation in HTML, CSS, and JavaScript.
+            As a passionate female developer, I am dedicated to creating
+            responsive and visually appealing web pages while constantly
+            improving user experience and implementing modern web design
+            principles. I am eager to contribute to a dynamic development team
+            and grow through hands-on experience and continuous learning.
+          </p>
+          <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+            <button type="button" class="btn btn-primary btn-lg px-4 gap-3">
+              Get a Quote
+            </button>
+            <button type="button" class="btn btn-outline-secondary btn-lg px-4">
+              Connect with Me
+            </button>
+          </div>
+        </div>
+      </div>
+    </main>
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"

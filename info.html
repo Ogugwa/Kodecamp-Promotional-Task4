@@ -3,10 +3,195 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./about.css" />
     <title>Document</title>
   </head>
   <body>
-    <h1>Information Page</h1>
-    <p>This is the information page.</p>
+    <nav class="container-fluid" id="top">
+      <header class="d-flex flex-wrap justify-content-center py-3 mb-4">
+        <a
+          href="/"
+          class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none"
+        >
+          <svg class="bi me-2" width="40" height="32" aria-hidden="true">
+            <use xlink:href="#bootstrap"></use>
+          </svg>
+          <span class="fs-4">Deborah Okolo</span>
+        </a>
+        <ul class="nav nav-pills">
+          <li class="nav-item">
+            <a href="./index.html" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="./about.html" class="nav-link">About</a>
+          </li>
+          <li class="nav-item">
+            <a href="./contact.html" class="nav-link">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a href="./info.html" class="nav-link active" aria-current="page"
+              >More Info</a
+            >
+          </li>
+        </ul>
+      </header>
+    </nav>
+    <main>
+      <div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#myCarousel"
+            data-bs-slide-to="0"
+            class="active"
+            aria-label="Slide 1"
+            aria-current="true"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#myCarousel"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+            class=""
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#myCarousel"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+            class=""
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="./images/carousel_img1.jpg"
+              alt="image of a lady in a party"
+              width="100%"
+              height="100%"
+            />
+            <!-- <svg
+              aria-hidden="true"
+              class="bd-placeholder-img"
+              height="100%"
+              preserveAspectRatio="xMidYMid slice"
+              width="100%"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <rect
+                width="100%"
+                height="100%"
+                fill="var(--bs-secondary-color)"
+              ></rect>
+            </svg> -->
+            <div class="container">
+              <div class="carousel-caption text-start">
+                <h1>Hi I'm Deborah</h1>
+                <p class="opacity-75">
+                  I'm excited to bring my creativity and technical skills to the
+                  world of web development. When I'm not coding, I enjoy
+                  exploring new design trends, contributing to open-source
+                  projects, and staying active with outdoor activities.
+                </p>
+                <p>
+                  <a class="btn btn-lg btn-primary" href="#">Let's Connect</a>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="./images/carousel_img2.jpg"
+              alt="image of a lady in nature"
+              width="100%"
+              height="100%"
+            />
+            <!-- <svg
+              aria-hidden="true"
+              class="bd-placeholder-img"
+              height="100%"
+              preserveAspectRatio="xMidYMid slice"
+              width="100%"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <rect
+                width="100%"
+                height="100%"
+                fill="var(--bs-secondary-color)"
+              ></rect>
+            </svg> -->
+            <div class="container">
+              <div class="carousel-caption">
+                <h1>I'm Learning To Build Amazing Stuffs</h1>
+                <p>Join me on this amazing Transitioning Journey</p>
+                <p>
+                  <a class="btn btn-lg btn-primary" href="#">Jump right In</a>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="./images/carousel_img3.jpg"
+              alt="image of a lady"
+              width="100%"
+              height="100%"
+            />
+            <!-- <svg
+            >
+              <rect
+                width="100%"
+                height="100%"
+                fill="var(--bs-secondary-color)"
+              ></rect>
+            </svg> -->
+            <div class="container">
+              <div class="carousel-caption text-end">
+                <h1>Personal Projects</h1>
+                <p>
+                  My personal projects are a reflection of my creativity,
+                  problem-solving skills, and dedication to continuous learning.
+                  Each project is an opportunity to experiment with new
+                  technologies and push the boundaries of my frontend
+                  development capabilities.
+                </p>
+                <p>
+                  <a class="btn btn-lg btn-primary" href="#">Browse Projects</a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#myCarousel"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#myCarousel"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </main>
   </body>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+    crossorigin="anonymous"
+  ></script>
 </html>
